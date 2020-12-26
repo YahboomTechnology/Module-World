@@ -6,9 +6,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "TM1650": "github:YahboomTechnology/tm1650",
         "ASR": "github:YahboomTechnology/Asr",
         "SPEECH": "github:YahboomTechnology/Speech",
+        "TM1650": "github:YahboomTechnology/tm1650",
         "GR": "github:YahboomTechnology/GR",
         "microphone": "*"
     },
