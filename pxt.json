@@ -9,6 +9,7 @@
         "ASR": "github:YahboomTechnology/Asr",
         "SPEECH": "github:YahboomTechnology/Speech",
         "GR": "github:YahboomTechnology/GR",
+        "TM1650": "github:YahboomTechnology/tm1650",
         "microphone": "*"
     },
     "files": [
