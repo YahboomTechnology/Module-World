@@ -837,7 +837,7 @@ namespace ModuleWorld_Control {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function Servo(pin: mwServoNum, value: number): void {
 		pin = 13 - pin;
-		setPinPulseRange(pin, Math.map(value, 0, 359, 105, 545));
+		setPinPulseRange(pin, Math.map(value, 0, 359, 105, 530));
     }
 
     //% blockId=ModuleWorld_Control_MotorRun block="Motor|%value_num|%value_sta|speed %speed"
