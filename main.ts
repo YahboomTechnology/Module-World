@@ -19,7 +19,7 @@ namespace ModuleWorld_Sensor {
     let val_blue = 0;
 	
     const STM_ADD = 0X16;
-    const ANALOG_ADDR = 0x03;
+    const ANALOG_ADDR = 0x13;
 
     export enum mwAnalogNum {
         //% blockId="AnalogNum1" block="AnalogNum1"
@@ -654,7 +654,7 @@ namespace ModuleWorld_Control {
     const STM_ADD = 0X16;
     const MOT_ADDR = 0x01;
     const MOTSTOP_ADDR = 0X02;
-    const ANALOG_ADDR = 0x03;
+    const ANALOG_ADDR = 0x13;
 
     export enum mwAnalogNum {
         //% blockId="AnalogNum1" block="AnalogNum1"
