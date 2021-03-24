@@ -49,7 +49,8 @@
 	"ModuleWorld_PWM.enColor.Cyan|block":"青色",
 	"ModuleWorld_PWM.enColor.Pinkish|block":"品紅",
 	"ModuleWorld_PWM.enColor.Yellow|block":"黃色",
-	"ModuleWorld_PWM.Servo|block":"舵機|引脚%ServoNum|角度%value"
+	"ModuleWorld_PWM.Servo|block":"舵機(360)|引脚%ServoNum|角度%value",
+	"ModuleWorld_PWM.Servo2|block":"舵機(270)|引脚%ServoNum|角度%value"
 	
 	
 }
