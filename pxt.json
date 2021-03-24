@@ -11,7 +11,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh-cn/Module-World-strings.json"
+        "_locales/zh-cn/Module-World-strings.json",
+        "_locales/zh-tw/Module-World-strings.json"
     ],
     "testFiles": [
         "test.ts"
