@@ -623,7 +623,7 @@ namespace ModuleWorld_PWM {
     //% blockId=ModuleWorld_PWM_Servo2 block="Servo(270)|pin %ServoNum|value %value"
     //% weight=6
     //% blockGap=20
-    //% value.min=0 value.max=360
+    //% value.min=0 value.max=270
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function Servo2(ServoNum: mwServoNum, value: number): void {
 		let pin;
