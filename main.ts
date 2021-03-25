@@ -539,9 +539,9 @@ namespace ModuleWorld_PWM {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB(value1: number, value2: number, value3: number): void {
 		
-        pins.analogWritePin(13, value1 * 1024 / 256);
-        pins.analogWritePin(14, value2 * 1024 / 256);
-        pins.analogWritePin(12, value3 * 1024 / 256);
+        pins.analogWritePin(AnalogPin.P13, value1 * 1024 / 256);
+        pins.analogWritePin(AnalogPin.P14, value2 * 1024 / 256);
+        pins.analogWritePin(AnalogPin.P12, value3 * 1024 / 256);
     }
 	
     //% blockId=ModuleWorld_PWM_RGB2 block="RGB|(P12P13P14)|value %value"
@@ -549,9 +549,9 @@ namespace ModuleWorld_PWM {
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB2(value: enColor): void {
-		let pin1=13;
-		let pin2=14;
-		let pin3=12;
+		let pin1=DigitalPin.P13;
+		let pin2=DigitalPin.P14;
+		let pin3=DigitalPin.P12;
 
         switch (value) {
             case enColor.OFF: {
@@ -617,13 +617,13 @@ namespace ModuleWorld_PWM {
 		else if(ServoNum == 3)	{ pin = AnalogPin.P2; }
 		else if(ServoNum == 4)	{ pin = AnalogPin.P10; }
 		
-		pins.servoSetPulse(pin, Math.map(value, 500, 2500, 0, 360))
+		pins.servoSetPulse(pin, Math.map(value, 0, 360, 500, 2500))
     }
 	
     //% blockId=ModuleWorld_PWM_Servo2 block="Servo(270)|pin %ServoNum|value %value"
     //% weight=6
     //% blockGap=20
-    //% value.min=0 value.max=270
+    //% value.min=0 value.max=360
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function Servo2(ServoNum: mwServoNum, value: number): void {
 		let pin;
@@ -632,7 +632,7 @@ namespace ModuleWorld_PWM {
 		else if(ServoNum == 3)	{ pin = AnalogPin.P2; }
 		else if(ServoNum == 4)	{ pin = AnalogPin.P10; }
 		
-		pins.servoSetPulse(pin, Math.map(value, 500, 2500, 0, 270))
+		pins.servoSetPulse(pin, Math.map(value, 0, 270, 500, 2500))
     }
 
 
