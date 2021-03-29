@@ -496,19 +496,19 @@ namespace ModuleWorld_PWM {
     //% blockGap=22
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function BuzzerPin(value_DNum: mwDigitalNum): void {
-		let pin;
-		if(value_DNum == 1)	{ pin = AnalogPin.P0; }
-		else if(value_DNum == 2)	{ pin = AnalogPin.P2; }
-		else if(value_DNum == 3)	{ pin = AnalogPin.P3; }
-		else if(value_DNum == 4)	{ pin = AnalogPin.P4; }
-		else if(value_DNum == 5)	{ pin = AnalogPin.P6; }
-		else if(value_DNum == 6)	{ pin = AnalogPin.P8; }
-		else if(value_DNum == 7)	{ pin = AnalogPin.P10; }
-		else if(value_DNum == 8)	{ pin = AnalogPin.P12; }
-		else if(value_DNum == 9)	{ pin = AnalogPin.P14; }
-		else if(value_DNum == 10)	{ pin = AnalogPin.P1; }
+		let pinb;
+		if(value_DNum == 1)	{ pinb = AnalogPin.P0 }
+		else if(value_DNum == 2)	{ pinb = AnalogPin.P2 }
+		else if(value_DNum == 3)	{ pinb = AnalogPin.P3 }
+		else if(value_DNum == 4)	{ pinb = AnalogPin.P4 }
+		else if(value_DNum == 5)	{ pinb = AnalogPin.P6 }
+		else if(value_DNum == 6)	{ pinb = AnalogPin.P8 }
+		else if(value_DNum == 7)	{ pinb = AnalogPin.P10 }
+		else if(value_DNum == 8)	{ pinb = AnalogPin.P12 }
+		else if(value_DNum == 9)	{ pinb = AnalogPin.P14 }
+		else if(value_DNum == 10)	{ pinb = AnalogPin.P1 }
 		
-		pins.setAudioPin(pin);
+		pins.setAudioPin(pinb);
     }
     //% blockId=ModuleWorld_PWM_VibrationMot block="Vibration Motor|%value_DNum|speed %speed"
     //% weight=80
