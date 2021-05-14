@@ -207,39 +207,6 @@ namespace ModuleWorld_Digatal {
         return Math.idiv(d, 58);
     }
 
-    //% blockId=ModuleWorld_Digatal_UltrasonicV2 block="Ultrasonic for V2|pin %value_DNum"
-    //% weight=97
-    //% blockGap=20
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
-    export function UltrasonicV2(value_DNum: mwDigitalNum): number {
-        //send pulse
-		let Trig,Echo;		
-		if(value_DNum == 1)	{ Trig = DigitalPin.P0; Echo = DigitalPin.P1; }
-		else if(value_DNum == 2)	{ Trig = DigitalPin.P2; Echo = DigitalPin.P3; }
-		else if(value_DNum == 3)	{ Trig = DigitalPin.P3; Echo = DigitalPin.P4; }
-		else if(value_DNum == 4)	{ Trig = DigitalPin.P4; Echo = DigitalPin.P5; }
-		else if(value_DNum == 5)	{ Trig = DigitalPin.P6; Echo = DigitalPin.P7; }
-		else if(value_DNum == 6)	{ Trig = DigitalPin.P8; Echo = DigitalPin.P9; }
-		else if(value_DNum == 7)	{ Trig = DigitalPin.P10; Echo = DigitalPin.P11; }
-		else if(value_DNum == 8)	{ Trig = DigitalPin.P12; Echo = DigitalPin.P13; }
-		else if(value_DNum == 9)	{ Trig = DigitalPin.P14; Echo = DigitalPin.P15; }
-		else if(value_DNum == 10)	{ Trig = DigitalPin.P1; Echo = DigitalPin.P10; }
-		
-		
-        pins.setPull(Trig, PinPullMode.PullNone);
-        pins.digitalWritePin(Trig, 0);
-        control.waitMicros(2);
-        pins.digitalWritePin(Trig, 1);
-        control.waitMicros(10);
-        pins.digitalWritePin(Trig, 0);
-
-        //read pulse, maximum distance=500cm
-        const d = pins.pulseIn(Echo, PulseValue.High)/58;   
-
-        return d;
-    }
-
-
     //% blockId=ModuleWorld_Digatal_IR block="IR|pin %value_DNum|value %value"
     //% weight=96
     //% blockGap=20
