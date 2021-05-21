@@ -353,7 +353,7 @@ namespace ModuleWorld_Anaglog {
 		else if(value_ANum == 2)	{ lightpin = AnalogPin.P2; }
 		else if(value_ANum == 3)	{ lightpin = AnalogPin.P3; }
 		
-        value = pins.analogReadPin(lightpin);
+        value = 1024-pins.analogReadPin(lightpin);
         return value;
         //return 0;
     }
