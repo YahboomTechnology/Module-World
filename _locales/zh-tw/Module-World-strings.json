@@ -4,7 +4,6 @@
 	"{id:category}ModuleWorld_Digatal":"魔塊世界數字類",
 	"ModuleWorld_Digatal.dht11value|block":"DHT11感測器的%dht11type|值連接至%value_DNum",
 	"ModuleWorld_Digatal.Ultrasonic|block":"超聲波|引脚%value_DNum",
-	"ModuleWorld_Digatal.UltrasonicV2|block":"microbit|V2|超聲波|引脚%value_DNum",
 	"ModuleWorld_Digatal.IR|block":"紅外感測器|引脚%value_DNum|返回%value",
 	"ModuleWorld_Digatal.PIR|block":"人體紅外感應器|引脚%value_DNum|返回%value",
 	"ModuleWorld_Digatal.Button|block":"按鍵|引脚%value_DNum|返回%value",
