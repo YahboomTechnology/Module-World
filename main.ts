@@ -318,7 +318,7 @@ namespace ModuleWorld_Digatal {
 }
 
 //% color="#C814B8" weight=24 icon="\uf1d4"
-namespace ModuleWorld_Anaglog {
+namespace ModuleWorld_Analog {
 
     export enum enRocker {
         //% blockId="NoState" block="NoState"
