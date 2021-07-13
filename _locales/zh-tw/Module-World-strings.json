@@ -23,8 +23,8 @@
 	"ModuleWorld_Digatal.enButton.Realse|block":"鬆開",
 	"ModuleWorld_Digatal.Collision|block":"碰撞檢測|引脚%value_DNum|返回%value",
 
-	"ModuleWorld_Anaglog|block":"魔塊世界類比類",
-	"{id:category}ModuleWorld_Anaglog":"魔塊世界觀感類",
+	"ModuleWorld_Analog|block":"魔塊世界類比類",
+	"{id:category}ModuleWorld_Analog":"魔塊世界觀感類",
 	"ModuleWorld_Analog.Potentiometer|block":"電位器|引脚%value_ANum",
 	"ModuleWorld_Analog.Rocker|block":"遙杆|引脚%value_ANum|返回%value",
 	"ModuleWorld_Analog.enRocker.NoState|block":"無",
