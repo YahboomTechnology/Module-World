@@ -246,6 +246,7 @@ namespace ModuleWorld_Digatal {
 		else if(value_DNum == 10)	{ pin = DigitalPin.P1; }
 
         pins.setPull(pin, PinPullMode.PullDown);
+	pins.digitalWritePin(pin, 1);
         return pins.digitalReadPin(pin) == value;
     }
 	
