@@ -5,7 +5,7 @@ modified from chengengyue
 
 
 //% color="#228B22" weight=25 icon="\uf0b2"
-namespace ModuleWorld_Digatal {
+namespace ModuleWorld_Digital {
 	
     export enum mwDigitalNum {
         //% blockId="P0P1" block="P0P1"
@@ -175,7 +175,7 @@ namespace ModuleWorld_Digatal {
     }
 
 
-    //% blockId=ModuleWorld_Digatal_Ultrasonic block="Ultrasonic|pin %value_DNum"
+    //% blockId=ModuleWorld_Digital_Ultrasonic block="Ultrasonic|pin %value_DNum"
     //% weight=97
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -207,7 +207,7 @@ namespace ModuleWorld_Digatal {
         return Math.idiv(d, 58);
     }
 
-    //% blockId=ModuleWorld_Digatal_IR block="IR|pin %value_DNum|value %value"
+    //% blockId=ModuleWorld_Digital_IR block="IR|pin %value_DNum|value %value"
     //% weight=96
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -228,7 +228,7 @@ namespace ModuleWorld_Digatal {
         return pins.digitalReadPin(pin) == value;
     }
 
-    //% blockId=ModuleWorld_Digatal_PIR block="PIR|pin %value_DNum|value %value"
+    //% blockId=ModuleWorld_Digital_PIR block="PIR|pin %value_DNum|value %value"
     //% weight=96
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -250,7 +250,7 @@ namespace ModuleWorld_Digatal {
         return pins.digitalReadPin(pin) == value;
     }
 	
-    //% blockId=ModuleWorld_Digatal_Collision block="Collision|pin %value_DNum|value %value"
+    //% blockId=ModuleWorld_Digital_Collision block="Collision|pin %value_DNum|value %value"
     //% weight=3
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -272,7 +272,7 @@ namespace ModuleWorld_Digatal {
         return pins.digitalReadPin(pin) == value;
     }
 
-    //% blockId=ModuleWorld_Digatal_Button block="Button|pin %value_DNum|value %value"
+    //% blockId=ModuleWorld_Digital_Button block="Button|pin %value_DNum|value %value"
     //% weight=3
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -293,7 +293,7 @@ namespace ModuleWorld_Digatal {
         pins.setPull(pin, PinPullMode.PullUp);
         return pins.digitalReadPin(pin) == value;
     }
-    //% blockId=ModuleWorld_Digatal_Vibration block="Vibration|pin %value_DNum|get "
+    //% blockId=ModuleWorld_Digital_Vibration block="Vibration|pin %value_DNum|get "
     //% weight=1
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
